@@ -1,10 +1,7 @@
 import React from "react";
-import Home from "./Home/Home.jsx"
-import "./index.css"
-export default function Index(){
-    return(
-        <>
-            <Home className="home"/>
-        </>
-    )
+import "./index.css";
+import Home from "../Home/Home";
+
+export default function Index() {
+  return <Home />;
 }
