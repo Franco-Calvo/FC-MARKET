@@ -1,10 +1,16 @@
 import React from "react";
 import "./Navbar.css";
+import {Link as Anchor} from "react-router-dom"
 
 export default function Navbar() {
   return (
-    <div>
-      <p>Jaimito</p>
+    <div className="navbar">
+      <nav>
+        <Anchor>Inicio</Anchor>
+        <Anchor>Comprar</Anchor>
+        <Anchor>Vender</Anchor>
+        <Anchor>TuMami</Anchor>
+      </nav>
     </div>
   );
 }
