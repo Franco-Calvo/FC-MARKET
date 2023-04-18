@@ -9,7 +9,6 @@ export default function Navbar() {
         <Anchor>Inicio</Anchor>
         <Anchor>Comprar</Anchor>
         <Anchor>Vender</Anchor>
-        <Anchor>TuMami</Anchor>
       </nav>
     </div>
   );

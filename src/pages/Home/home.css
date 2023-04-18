@@ -1,0 +1,89 @@
+.home {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .containerprincipal h1 {
+  font-size: 10rem;
+  width: 100%;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  opacity: 1;
+  margin-left: 2rem;
+
+}
+
+.home .containerprincipal p {
+  font-size: 15rem;
+  color: white;
+  margin-left: 2rem;
+
+}
+
+.home .containerprincipal hr {
+  width: 10rem;
+  border: 5px solid greenyellow;
+}
+
+.home .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .buttonContainer button {
+  position: relative;
+  background: greenyellow;
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: 550;
+}
+.home .buttonContainer button:hover {
+  position: relative;
+  background: rgb(153, 228, 40);
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: 1rem;
+}
+
+.home .buttonContainer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 3rem solid greenyellow;
+  border-right: 3rem solid #191919;
+}
+.home .buttonContainer button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 3rem solid rgb(153, 228, 40);
+  border-right: 3rem solid #191919;
+}
+
+.home .buttonContainer img {
+  width: 100%;
+  padding-right: 3rem;
+}
+
+.home .buttonContainer .textExample  {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  width: 50%;
+}
