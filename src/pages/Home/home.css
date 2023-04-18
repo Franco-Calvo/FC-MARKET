@@ -1,8 +1,12 @@
 .home {
   display: flex;
   width: 100%;
+  height: 100vh;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-top: 3rem;
+  background: #191919;
 }
 
 .home .containerprincipal h1 {
@@ -12,19 +16,19 @@
   -webkit-text-stroke: 2px white;
   opacity: 1;
   margin-left: 2rem;
-
 }
 
 .home .containerprincipal p {
   font-size: 15rem;
   color: white;
   margin-left: 2rem;
-
+  margin-bottom: 5rem;
 }
 
 .home .containerprincipal hr {
   width: 10rem;
   border: 5px solid greenyellow;
+  margin-bottom: 5rem;
 }
 
 .home .buttonContainer {
@@ -32,13 +36,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10rem;
 }
 
-.home .buttonContainer button {
+.home .buttonContainer .contactButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
   position: relative;
   background: greenyellow;
   border: none;
   outline: none;
+  text-decoration: none;
   width: 20rem;
   height: 5rem;
   font-size: 2rem;
@@ -46,20 +56,15 @@
   margin-right: 1rem;
   cursor: pointer;
   font-weight: 550;
+  margin-bottom: 5rem;
 }
-.home .buttonContainer button:hover {
-  position: relative;
-  background: rgb(153, 228, 40);
-  border: none;
-  outline: none;
-  width: 20rem;
-  height: 5rem;
-  font-size: 2rem;
-  border-radius: 15px 0px 0px 15px;
-  margin-right: 1rem;
+.home .buttonContainer .contactButton:hover {
+  background: rgb(102, 151, 27);
+  color: white;
+  transition: all 600ms;
 }
 
-.home .buttonContainer button::before {
+.home .buttonContainer .contactButton::before {
   content: "";
   position: absolute;
   top: 0;
@@ -67,13 +72,15 @@
   border-bottom: 3rem solid greenyellow;
   border-right: 3rem solid #191919;
 }
-.home .buttonContainer button:hover::before {
+.home .buttonContainer .contactButton:hover::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  border-bottom: 3rem solid rgb(153, 228, 40);
+  border-bottom: 3rem solid rgb(102, 151, 27);
   border-right: 3rem solid #191919;
+  color: white;
+  transition: all 600ms;
 }
 
 .home .buttonContainer img {
@@ -81,9 +88,38 @@
   padding-right: 3rem;
 }
 
-.home .buttonContainer .textExample  {
+.home .textExample {
+  display: flex;
+  justify-content: center;
+  background: none;
+  align-items: center;
   margin-top: 2rem;
   color: white;
   text-align: center;
-  width: 50%;
+  position: absolute;
+  right: 4rem;
+  bottom: 12rem;
+  gap: 15px;
+}
+
+.home .textExample img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.home .textExample img:hover {
+  width: 100px;
+  transform: scale(1.2);
+  opacity: 50%;
+  transition: all 600ms;
+}
+
+.home .textExample .xbox {
+  width: 100px;
+  cursor: pointer;
+}
+
+.home .textExample .xbox:hover {
+  width: 100px;
+  transform: scale(1.2);
 }

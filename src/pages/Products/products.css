@@ -1,0 +1,121 @@
+.containerProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+  background: #191919;
+  width: 100%;
+  height: 88vh;
+}
+
+.containerProducts span {
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+  font-size: 3rem;
+  padding: 2rem;
+  background: greenyellow;
+}
+
+.containerProducts .containerCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.containerProducts .containerCards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  background-image: url(../../images/gray.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.13);
+}
+
+.containerProducts .containerCards .card p {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.containerProducts .containerCards .card p:hover {
+  color: greenyellow;
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.containerProducts .containerCards .card .buyCoins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: greenyellow;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  height: 2.5rem;
+  text-decoration: none;
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  bottom: 0;
+}
+
+.containerProducts .containerCards .card .buyCoins:hover {
+  background: rgb(102, 151, 27);
+  color: white;
+  transition: all 600ms;
+}
+
+.containerProducts .containerCards .card img {
+  width: 90%;
+  background: transparent;
+}
+
+.containerProducts hr {
+  width: 25rem;
+  margin-top: 3rem;
+  border: 1px solid greenyellow;
+  margin-bottom: 5rem;
+}
+
+.containerProducts .sellCoins {
+  background: greenyellow;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.13);
+}
+
+.containerProducts .sellCoins:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.33);
+  background: rgb(102, 151, 27);
+  color: white;
+  transition: all 600ms;
+}
+
+.containerProducts .sellCoins {
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+  font-size: 3rem;
+  padding: 1rem;
+  background: greenyellow;
+  transition: all 600ms;
+}
