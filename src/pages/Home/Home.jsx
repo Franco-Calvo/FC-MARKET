@@ -6,13 +6,13 @@ import play5 from "../../images/play5.png";
 import xbox from "../../images/xbox.png";
 import pc from "../../images/pc.png";
 import { Link as Anchor } from "react-router-dom";
+import Navbar from "../../components/NavBar/Navbar";
 
 export default function Home() {
-  const homeRef = useRef(null);
-
   return (
     <>
-      <div className="home" ref={homeRef}>
+      <Navbar />
+      <div className="home">
         <div className="containerprincipal">
           <h1>FC MARKET</h1>
           <p>2023</p>

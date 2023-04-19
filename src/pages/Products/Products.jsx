@@ -1,15 +1,14 @@
 import React, { useRef } from "react";
 import "./products.css";
-import futcoin from "../../images/futcoin.png";
 import { Link as Anchor } from "react-router-dom";
 import Navbar from "../../components/NavBar/Navbar";
 
 export default function Products() {
-  const homeRef = useRef(null);
+  const productRef = useRef(null);
 
   return (
-    <div className="containerProducts" ref={homeRef}>
-      <Navbar homeRef={homeRef} />
+    <div className="containerProducts" ref={productRef}>
+      <Navbar productRef={productRef} />
       <span>Nuestras promociones</span>
       <div className="containerCards">
         <div className="card">

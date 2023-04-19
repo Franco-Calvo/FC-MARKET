@@ -1,20 +1,29 @@
 import React from "react";
 import "./Navbar.css";
 import { Link as Anchor } from "react-router-dom";
-import { useRef } from "react";
 
-export default function Navbar({ homeRef }) {
+export default function Navbar({ productRef }) {
   const scrollToNextView = (e) => {
     e.preventDefault();
-    homeRef.current.scrollIntoView({ behavior: "smooth" });
+    productRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  console.log(homeRef);
+  const scrollToUp = () => {
+    const scrollStep = window.scrollY / 15;
+    const scrollInterval = window.requestAnimationFrame(() => {
+      if (window.scrollY !== 0) {
+        window.scrollTo(0, window.scrollY - scrollStep);
+        scrollToUp();
+      } else {
+        window.cancelAnimationFrame(scrollInterval);
+      }
+    });
+  };
 
   return (
     <div className="navbar">
       <nav>
-        <Anchor className="navButton" onClick={scrollToNextView}>
+        <Anchor className="navButton" onClick={scrollToUp}>
           Inicio
         </Anchor>
         <Anchor className="navButton" onClick={scrollToNextView}>

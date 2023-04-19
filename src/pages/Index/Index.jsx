@@ -5,13 +5,11 @@ import Navbar from "../../components/NavBar/Navbar";
 import Products from "../../pages/Products/Products";
 
 export default function Index() {
-  const homeRef = useRef(null);
-  const refs = { homeRef };
   return (
     <>
-      <Navbar refs={refs} />
+      <Navbar />
       <Home />
-      <Products ref={homeRef} />
+      <Products />
     </>
   );
 }
