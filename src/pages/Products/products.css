@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  height: 100%;
 }
 
 .containerProducts .containerCards .card {
@@ -118,4 +119,61 @@
   padding: 1rem;
   background: greenyellow;
   transition: all 600ms;
+}
+
+@media (max-width: 1400px){
+  .containerProducts .containerCards .card{
+    width: 17rem; 
+    height: 17rem;
+  }
+  
+}
+
+
+@media (max-width: 1200px){
+  .containerProducts .containerCards{
+    padding: 1rem;
+   flex-wrap: wrap;
+  }
+  
+  .containerProducts .containerCards .card{
+    height: 13rem;
+    width: 13rem;
+  }
+
+  .containerProducts .containerCards .card p{
+    font-size: 4rem;
+  }
+
+}
+
+@media (max-width: 550px){
+  .containerProducts .containerCards .card{
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .containerProducts .containerCards .card p{
+    font-size: 3rem;
+  }
+
+  .containerProducts span {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px){
+  .containerProducts .containerCards .card{
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .containerProducts .containerCards .card p{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  
 }

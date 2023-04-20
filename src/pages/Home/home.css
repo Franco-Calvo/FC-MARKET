@@ -123,3 +123,148 @@
   width: 100px;
   transform: scale(1.2);
 }
+
+@media (max-width: 1500px){
+  .home .buttonContainer{
+    width: 500px;
+  }
+  .home .textExample{
+    width: 400px;
+    top: 580px;
+  }
+
+  .home .containerprincipal h1{
+    font-size: 8rem;
+  }
+  
+}
+
+@media (max-width: 1300px){
+  .home .buttonContainer{
+    width: 450px;
+  }
+
+  .home .textExample{
+    width: 400px;
+    top: 550px;
+  }
+
+  .home .containerprincipal h1{
+    font-size: 7rem;
+  }
+
+  .home .containerprincipal p {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 1160px){
+
+  .home .buttonContainer{
+    width: 400px;
+  }
+
+  .home .textExample{
+    width: 400px;
+    top: 550px;
+  }
+  .home .containerprincipal h1{
+    font-size: 5.5rem;
+  }
+
+  .home .containerprincipal p {
+    font-size: 9rem;
+  }
+
+}
+
+
+@media (max-width: 950px){
+  .home .buttonContainer{
+    width: 400px;
+  }
+
+  .home .textExample{
+    width: 350px;
+    top: 550px;
+  }
+  .home .containerprincipal h1{
+    font-size: 4.5rem;
+  }
+
+  .home .containerprincipal p {
+    font-size: 5rem;
+  }
+}
+
+
+@media(max-width: 860px){
+  .home .buttonContainer img {
+    display: none;
+}
+.home .textExample{
+  position: static;
+  width: 300px;
+  top: 200px;
+  margin: 0px 180px;
+}
+.home{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .buttonContainer .contactButton{
+  top: 80px;;
+}
+
+.home .buttonContainer .contactButton:hover::before{
+  display: none;
+}
+
+.home .buttonContainer .contactButton:hover::after{
+  display: none;
+}
+
+.home .buttonContainer .contactButton::before{
+  display: none;
+}
+
+}
+
+
+@media (max-width: 500px){
+  .home .containerprincipal h1{
+    font-size: 3.5rem;
+  }
+
+  .home .containerprincipal p {
+    font-size: 4rem;
+  }
+
+  .home .textExample img {
+    width: 70px;    
+  }
+  .home .textExample .xbox{
+    width: 70px;
+  }
+
+  
+  
+}
+
+@media (max-width: 400px){
+  .honme .containerprincipal{
+    width: 200px;
+  }
+  .home .containerprincipal h1{
+    font-size: 3rem;
+   
+  }
+
+  
+}
+
+
+
+
