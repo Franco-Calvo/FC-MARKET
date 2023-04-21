@@ -54,7 +54,7 @@ export default function Products() {
       </div>
       <hr />
       <Anchor to="https://wa.link/t1f1uj" target="_blank" className="sellCoins">
-        ¿Deseas vender tus monedas?
+        Haz click y vende tus monedas
       </Anchor>
     </div>
   );

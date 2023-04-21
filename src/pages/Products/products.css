@@ -101,6 +101,7 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
+  margin-bottom: 1rem;
   box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.13);
 }
 
@@ -121,39 +122,94 @@
   transition: all 600ms;
 }
 
-@media (max-width: 1400px){
-  .containerProducts .containerCards .card{
-    width: 17rem; 
+@media (max-width: 1400px) {
+  .containerProducts .containerCards .card {
+    width: 17rem;
     height: 17rem;
   }
-  
+  .containerProducts .sellCoins {
+    margin-bottom: 5rem;
+  }
 }
 
-
-@media (max-width: 1200px){
-  .containerProducts .containerCards{
+@media (max-width: 1200px) {
+  .containerProducts .containerCards {
     padding: 1rem;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
   }
-  
-  .containerProducts .containerCards .card{
+
+  .containerProducts .containerCards .card {
     height: 13rem;
     width: 13rem;
   }
 
-  .containerProducts .containerCards .card p{
+  .containerProducts .containerCards .card p {
     font-size: 4rem;
   }
+  .containerProducts .containerCards .card p:hover {
+    font-size: 4rem;
+  }
+  .containerProducts hr {
+    width: 100%;
+  }
 
+  .containerProducts .sellCoins {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .containerProducts .sellCoins:hover {
+    transform: scale(1);
+  }
 }
 
-@media (max-width: 550px){
-  .containerProducts .containerCards .card{
+@media (max-width: 800px) {
+  .containerProducts .sellCoins {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .containerProducts .sellCoins:hover {
+    transform: scale(1);
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.33);
+    background: rgb(102, 151, 27);
+    color: white;
+    transition: all 600ms;
+  }
+
+  .containerProducts span {
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+    background: greenyellow;
+  }
+
+  .containerProducts .containerCards .card p {
+    font-size: 3rem;
+  }
+
+  .containerProducts .containerCards .card p:hover {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .containerProducts .containerCards .card {
     height: 10rem;
     width: 10rem;
   }
 
-  .containerProducts .containerCards .card p{
+  .containerProducts .containerCards .card p {
+    font-size: 3rem;
+  }
+
+  .containerProducts .containerCards .card p:hover {
     font-size: 3rem;
   }
 
@@ -162,18 +218,63 @@
     width: 100%;
     font-size: 1.5rem;
   }
-}
 
-@media (max-width: 390px){
-  .containerProducts .containerCards .card{
-    height: 8rem;
-    width: 8rem;
+  .containerProducts .containerCards {
+    padding: 0.1rem;
+    flex-wrap: wrap;
+  }
+  .containerProducts hr {
+    width: 100%;
   }
 
-  .containerProducts .containerCards .card p{
+  .containerProducts .sellCoins {
+    background: greenyellow;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.13);
+  }
+}
+@media (max-width: 390px) {
+  .containerProducts .containerCards .card {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .containerProducts .containerCards .card p {
     font-size: 3rem;
     padding-bottom: 1rem;
   }
 
-  
+  .containerProducts .sellCoins {
+    background: greenyellow;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.13);
+  }
+
+  .containerProducts .sellCoins:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.33);
+    background: rgb(102, 151, 27);
+    color: white;
+    transition: all 600ms;
+  }
+
+  .containerProducts hr {
+    width: 100%;
+  }
 }

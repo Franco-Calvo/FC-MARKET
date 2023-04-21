@@ -1,0 +1,28 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+  width: 100%;
+  gap: 2rem;
+  height: 15vh;
+}
+
+.Footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Footer .socials a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.Footer .socials a:hover {
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.43);
+  transform: scale(1.05);
+  transition: all 600ms;
+}
