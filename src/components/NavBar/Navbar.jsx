@@ -23,7 +23,6 @@ export default function Navbar({ productRef }) {
   return (
     <div className="navbar">
       <nav>
-        <h1>Hola</h1>
         <Anchor className="navButton" onClick={scrollToUp}>
           Inicio
         </Anchor>
